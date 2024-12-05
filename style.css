@@ -1,0 +1,276 @@
+/* #0F0F0F bgcolor */
+/* FFFFFF#FFFFFF button color
+#3F3F3F button hover
+D6D6D6#D6D6D6 text color */
+/* #E1002D notification badge */
+/* #D4D4D4 button text */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.vertical-line {
+    width: 11px;
+
+    height: 200px;
+
+    background-color: rgb(63, 75, 245);
+
+    border: none;
+    border-radius: 5px;
+
+    margin: 20px;
+    /* color: skyblue; */
+    opacity: 0;
+    animation: slide 1s forwards 0.2s;
+    transition: 0.3s all;
+
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        height: 0px;
+    }
+
+    25% {
+        opacity: 0.3;
+        /* height: 80px; */
+    }
+
+    75% {
+        opacity: 0.6;
+        /* height: 120px; */
+    }
+
+    100% {
+        opacity: 1;
+        height: 200px;
+    }
+
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.left-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 3px;
+    font-weight: 900;
+    font-size: 35px;
+    color: rgb(63, 75, 245);
+    /* opacity: 0; */
+    /* animation: fadeIn 2s forwards 1s; */
+}
+
+.head1 {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards 0.5s;
+    transition: 0.3s all;
+}
+
+.head2 {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards 1s;
+    transition: 0.3s all;
+}
+
+.head3 {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards 1.5s;
+    transition: 0.3s all;
+}
+
+@keyframes fadeIn {
+    0% {
+
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.right-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.profile-card {
+    position: absolute;
+    height: 300px;
+    width: 240px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px gray;
+
+}
+
+.upper-card {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(63, 75, 245);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dp {
+    position: relative;
+    top: 25px;
+    left: 78px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(187, 187, 187);
+    border: 2px solid rgb(22, 34, 198);
+
+}
+
+.content {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.Heading {
+    font-size: 18px;
+    font-weight: 400;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.Heading:hover {
+    color: rgb(81, 79, 79);
+}
+
+.designation {
+    font-size: 9px;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 50%;
+    transition: 0.3s all;
+
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px grey;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.subs-btn {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 16px;
+    color: white;
+    background-color: rgb(63, 75, 245);
+    outline: none;
+    border: none;
+    transition: 0.3s all;
+}
+
+.subs-btn:hover {
+    transform: scale(1.1);
+}
+
+.likes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.like:hover {
+
+    color: red;
+}
+
+.vertical-hr {
+    background-color: grey;
+    width: 2px;
+    height: 15px;
+    margin-left: 14px;
+}
+
+.like>i {
+    font-size: 18px;
+    margin-left: -10px;
+}
